@@ -1,7 +1,9 @@
 function Footer() {
     return (
         <>
-        <p>Rodapé</p> 
+            <footer class="footer">
+                <p>Rodapé</p>
+            </footer>
         </>
     )
 }

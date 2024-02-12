@@ -1,14 +1,17 @@
 const express = require("express");
-const app = express();
+const cors = require("cors");
+const mysql = require ("mysql2");
 
-const mysql = require ("mysql");
+const app = express();
+app.use(express.json());
+app.use(cors());
 
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
-    database: 'e_commerce'
-})
+    password: 'admin', 
+    database: 'e_commerce',
+});
 
 db.connect(function(error) {
     if(error) {
@@ -19,9 +22,10 @@ db.connect(function(error) {
     }
 });
 
-app.get("/", function(req, res) {
-    res.send("Servidor iniciado com sucesso");
-});
+module.exports = db;
+
+const registerRoute = require("./register");
+app.use(registerRoute)
 
 app.listen(8080, function() {
     console.log("Servidor iniciado na porta 8080");
