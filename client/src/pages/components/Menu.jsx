@@ -1,5 +1,3 @@
-import '../css/menu.css'
-
 function Menu() {
   return (
     <header className="menu-container">
@@ -9,7 +7,7 @@ function Menu() {
           </div>
 
           <div className="menu-login">
-              <a href="/login">Entrar </a>
+              <a href="/login">Entrar</a>
               <a href="/register">Registrar</a>
           </div>
       </div>
@@ -18,8 +16,10 @@ function Menu() {
           <ul className="menu-bottom">
               <li className="menu-link"><a href="">Todos</a></li>
               <li className="menu-link"><a href="">Mais vendidos</a></li>
-              <li className="menu-link"><a href="">Eletônicos</a></li>
-              <li className="menu-link"><a href="">Computadores</a></li>
+              <li className="menu-link"><a href="">Eletrônicos</a></li>
+              <li className="menu-link"><a href="">Informática</a></li>
+              <li className="menu-link"><a href="">TVs e Vídeo</a></li>
+              <li className="menu-link"><a href="">Smarthphones</a></li>
           </ul>
       </nav>
     </header>

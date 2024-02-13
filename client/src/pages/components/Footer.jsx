@@ -1,9 +1,7 @@
-import '../css/footer.css'
-
 function Footer() {
     return (
         <footer className="footer">
-            <p>Rodapé</p>
+            <p>©E-Commerce - Todos os direitos reservados.</p>
         </footer>
     )
 }

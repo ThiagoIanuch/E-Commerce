@@ -1,23 +1,32 @@
-import '../css/showcase.css'
+import { useEffect, useState } from 'react'
+import axios from "axios"
 
 function Showcase() {
+    const [showcase, setShowcase] = useState([]);
+
+    useEffect(() => {
+        axios.get("http://localhost:8080/get-showcase").then((response) => {
+            setShowcase(response.data)
+        })
+    }, []);
+
     return (
-        <div className="showcase">
-            <div className="product">Produto 1</div>
-            <div className="product">Produto 2</div>
-            <div className="product">Produto 3</div>
-            <div className="product">Produto 4</div>
-            <div className="product">Produto 5</div>
-            <div className="product">Produto 6</div>
-            <div className="product">Produto 7</div>
-            <div className="product">Produto 8</div>
-            <div className="product">Produto 9</div>
-            <div className="product">Produto 10</div>
-            <div className="product">Produto 11</div>
-            <div className="product">Produto 12</div>
-            <div className="product">Produto 13</div>
-            <div className="product">Produto 14</div>
-            <div className="product">Produto 15</div>
+        <div className="showcase-container">
+            <div className="showcase-grid">
+                {showcase.map((product, index) => (
+                    <a href="">
+                        <div className="product" key={index}>
+                            <div className="product-avatar">
+                                <img src={"http://localhost:8080/products-avatar/" + product.productAvatar}></img>
+                            </div>
+
+                            <div className="product-name">{product.productName}</div>
+
+                            <div className="product-price">R$ {product.productPrice}</div>
+                         </div>
+                    </a>
+                ))}
+            </div>
         </div>
     )
 }

@@ -3,8 +3,11 @@ const cors = require("cors");
 const mysql = require ("mysql2");
 
 const app = express();
+
 app.use(express.json());
 app.use(cors());
+
+app.use(express.static('public'));
 
 const db = mysql.createConnection({
     host: 'localhost',
@@ -24,8 +27,8 @@ db.connect(function(error) {
 
 module.exports = db;
 
-const registerRoute = require("./register");
-app.use(registerRoute)
+const showcaseRoute = require("./showcase");
+app.use(showcaseRoute)
 
 app.listen(8080, function() {
     console.log("Servidor iniciado na porta 8080");
