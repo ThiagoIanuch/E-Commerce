@@ -8,4 +8,4 @@ Projeto de um site E-Commerce utilizando React JS e Node JS junto com o MySQL.
 - Conexão com o banco de dados realizada<br>
 - Primeiros dados sendo enviados para a API até o servidor<br>
 <br>
-<img src="https://i.imgur.com/rUahCzH.png">
+<img src="https://i.imgur.com/WW1mMAN.png">
