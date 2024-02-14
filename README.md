@@ -13,4 +13,4 @@ Projeto de um site E-Commerce utilizando React JS e Node JS junto com o MySQL.
 <img src="https://i.imgur.com/HstDfOj.png">
 
 <h3>Página de erro 404</h4>
-<img src="https://i.imgur.com/RMNpzlm.png>>
+<img src="https://i.imgur.com/RMNpzlm.png">
