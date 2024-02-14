@@ -1,6 +1,7 @@
 import { useEffect } from "react"
-import Menu from "./components/Menu.jsx";
-import Footer from "./components/Footer.jsx"
+import Menu from "../components/Menu.jsx";
+import Footer from "../components/Footer.jsx"
+import Error404 from "../public/error-404.png"
 
 function NotFound() {
     useEffect(() => {
@@ -10,8 +11,10 @@ function NotFound() {
     return (
         <>
             <Menu></Menu>
-            <div className="not-found-container">
-                <a href="/">ERRO 404</a>
+            <div className="content not-found">
+                <a href="/">
+                    <img src={Error404}></img>
+                </a>
             </div>
             <Footer></Footer>
         </>

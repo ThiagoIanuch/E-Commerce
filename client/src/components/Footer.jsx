@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="footer">
-            <p>©E-Commerce - Todos os direitos reservados.</p>
+            <p>©E-Commerces - Todos os direitos reservados.</p>
         </footer>
     )
 }

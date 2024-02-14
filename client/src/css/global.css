@@ -97,6 +97,10 @@ body {
     border-radius: 8px;
 }
 
+.product:hover {
+    border-color: blue;
+}
+
 .product-avatar img{
     width: 100%;
 }
@@ -122,4 +126,14 @@ body {
 .showcase-grid a {
     text-decoration: none;
     color: black;
+}
+
+.content {
+    min-height: calc(100vh - 85px - 50px)
+}
+
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

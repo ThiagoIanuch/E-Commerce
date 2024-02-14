@@ -1,9 +1,10 @@
 const express = require("express");
+
+const db = require("../server.js")
+
 const router = express.Router();
 
-const db = require("./server.js")
-
-router.get("/get-showcase", (req, res) => {
+router.get("/get-products", (req, res) => {
     const SQL = `SELECT * from products ORDER BY RAND() LIMIT 10`;
 
     db.query(SQL, (error, result) => {
@@ -11,8 +12,6 @@ router.get("/get-showcase", (req, res) => {
             console.log(error);
         }
         else {
-            console.log(result.productPrice)
-
             res.send(result);
         }
     })
