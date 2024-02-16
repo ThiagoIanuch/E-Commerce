@@ -14,12 +14,12 @@ function Menu() {
 
       <nav>
           <ul className="menu-bottom">
-              <li className="menu-link"><a href="">Todos</a></li>
-              <li className="menu-link"><a href="">Mais vendidos</a></li>
-              <li className="menu-link"><a href="">Eletrônicos</a></li>
-              <li className="menu-link"><a href="">Informática</a></li>
-              <li className="menu-link"><a href="">TVs e Vídeo</a></li>
-              <li className="menu-link"><a href="">Smarthphones</a></li>
+              <li className="menu-link"><a href="/all">Todos</a></li>
+              <li className="menu-link"><a href="/all">Mais vendidos</a></li>
+              <li className="menu-link"><a href="/all">Eletrônicos</a></li>
+              <li className="menu-link"><a href="/all">Informática</a></li>
+              <li className="menu-link"><a href="/all">TVs e Vídeo</a></li>
+              <li className="menu-link"><a href="/all">Smarthphones</a></li>
           </ul>
       </nav>
     </header>
